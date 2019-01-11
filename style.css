@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('public/pics/Curtain-Img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100%;
+}
+.main {
+    width: 98%;
+    padding:  1%;
+}
+
+h1 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+
+#container {
+width: 100%;
+text-align: center;
+height: auto;
+margin: 0 auto;
+
+}
+#container span {
+
+    
+    width: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+.content {
+    width: 98%;
+    margin:  0 1%;
+}
+
+input {
+    display: inline;
+    margin: 0;
+}
+
+#hangman {
+    background-color: rgba(255, 204, 153, 0.6);
+    width: 30%;
+    height: auto;
+    max-height: 400px;
+    max-width: 400px;
+}
+.playground {
+    max-height: 400px;
+}
+.solution {
+    padding-bottom: 10px;
+}
+#details img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+}

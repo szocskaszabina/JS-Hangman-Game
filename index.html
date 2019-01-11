@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Hangman</title> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+<div class="main">
+  <h1>Welcome To My Movie-Hangman Game!</h1>
+  <p>This is a simple Hangman game with titles of movies released from year 2017. 
+  Note that it can contain numbers and special characters (for example: $, &) as well.
+  You should type only one character at a time, otherwise it will not work!
+  </p>
+  <button id="startButton" class="btn btn-light">Start New Game</button>
+  <div id="container"></div>
+  <hr>
+</div>
+
+<div class="container-fluid">
+<div class=" row content">
+  <div id="hangman" class="col-md-4 col-12 order-2 order-md-1">
+    <img src="public/pics/bg.png" alt="hangman" id="hanging" class="img-fluid">
+  </div>
+
+  <div class="playground col-md-3 col-12 order-1 order-md-2 d-flex flex-column justify-content-center">
+      <label for="guess">Type in your character:</label>
+      <input type="text" id="guess" class="input-group-text"><br>
+      <button id="guessButton" class="btn btn-light">Guess</button><br>
+      <div id="mistakes">Wrong letters: </div><br>
+  </div>
+
+  <div class="solution col-md-5 col-12 order-3">
+      <div id="solution"></div>
+      <div id=details></div>
+    </div>
+</div>
+</div>
+
+<audio src="public/sounds/Jump-SoundBible.com-1007297584.mp3" id="correct-sound"></audio>
+<audio src="public/sounds/Strong_Punch-Mike_Koenig-574430706.mp3" id="hanging-sound"></audio>
+<audio src="public/sounds/Sad_Trombone-Joe_Lamb-665429450.mp3" id="losing-sound"></audio>
+<audio src="public/sounds/Applause Light 2-SoundBible.com-356111200.mp3" id="applause"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
